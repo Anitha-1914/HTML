@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <center>
+    <center>Registration Form</center>
+    <h1> Registration <small></small></h1>
+    <div>
+    <label>Name</label>
+    <input type="text"><br>
+    <label>Hall ticket no</label>
+    <input type="text"><br><br>
+    <label>College</label>
+    <select>
+        <option value="aits">aits</option>
+        <option value="bits">bits</option>
+        <option value="kits">kits</option>
+    </select><br>
+    <label>Branch</label>
+    <select>
+        <option value="cse">cse</option>
+        <option value="ece">ece</option>
+        <option value="eee">eee</option>
+        <option value="mech">mech</option>
+    </select><br>
+    <label>Gender</label>
+    <input type="radio" name="Female">Female</input>
+    <input type="radio" name="Male">Male</input><br>
+    <label>Email</label>
+    <input type="email" id="email"><br>
+    <label>password</label>
+    <input type="password" id="password"><br>
+    <div class="alert alert-success">
+        <strong>Success!</strong> Indicates a successful or positive action.
+      </div>
+      
+      <div class="alert alert-info">
+        <strong>Info!</strong> Indicates a neutral informative change or action.
+      </div>
+      
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> Indicates a warning that might need attention.
+      </div>
+      
+      <div class="alert alert-danger">
+        <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+      </div>
+    <script>
+        function validate(){
+            var email=getElementById("email");
+            var password=getElementById("password");
+            if(email.value=="")
+            {
+                alert("enter email");
+            }
+            if(password.value=="")
+            {
+                alert("enter password");
+            }
+        }
+    </script><br>
+    
+    
+   <button>submit</button>
+</center>
+</div>
+</body>
+</body>
+</html>
